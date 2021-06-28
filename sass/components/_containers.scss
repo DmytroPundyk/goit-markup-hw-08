@@ -1,0 +1,34 @@
+/* контейнеры всех секций */
+.container {
+    width:$mobile;
+    margin: 0 auto;
+   padding: 0 15px;
+  
+      .hero &{
+          display: flex;
+         flex-direction: column; 
+      }
+      .header &{
+          display: flex;
+          align-items: center;
+       
+      }
+   @media screen and(min-width:$tablet) {
+     width:$tablet ;
+     
+  }
+    @media screen and(min-width:$desktop) {
+     width:$desktop;
+     
+ 
+   .hero &,
+   .business &,
+   .our-team &,
+   .customers &,
+   .portfolio-content & {
+       display: flex;
+      width: 1200px; 
+     flex-direction: column;
+   } 
+}
+}

@@ -1,0 +1,43 @@
+/* Секция "особености работы" */
+.features {
+   padding: 60px 0 60px 0;
+
+}
+/*  скрытый заголовок */
+.visually-hidden {
+   position: fixed;
+   width: 1px;
+   height: 1px;
+   margin: -1;
+   clip: rect(0 0 0 0);
+}
+.features__list {
+   width: 100%;
+}
+.features__item {
+   width: 450px;
+    margin-bottom: 30px;
+}
+.features__block{
+width: 100%;
+height: 120px;
+background: #F5F4FA;
+border-radius: 4px;
+ @include centeredFlex();
+}
+
+
+.features__header {
+   text-align: center;
+   text-transform: uppercase;
+   font-size: inherit;
+   font-weight: 700;
+   line-height: inherit;
+   margin-top: $basic-card-gap;
+}
+.features__text {
+   margin-top: 10px;
+   line-height: 1.714;
+   letter-spacing: 0.03em;
+   color: $second-text-color;
+}

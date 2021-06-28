@@ -1,0 +1,47 @@
+/* секция клиенты */
+.customers {
+   padding: 60px 0 60px 0;
+}
+.customers__header {
+   font-weight: bold;
+   font-size: 28px;
+   line-height: 1.142;
+   text-align: center;
+   letter-spacing: inherit;
+   margin-bottom: 30px;
+}
+.customers__list {
+    margin-top: #{-1 * $basic-card-gap};
+   margin-left: #{-1 * $basic-card-gap};
+   display: flex;
+     flex-basis: calc(100% / 2 -30px);
+   flex-wrap: wrap;
+  
+}
+.customers__item {
+ margin-left: $basic-card-gap;
+   margin-top: $basic-card-gap;
+ 
+}
+.customers__link {
+   @include centeredFlex();
+   width: 210px;
+   height: 92px;
+   border-radius: 4px;
+   color: rgba(175, 177, 184, 1);
+   border: 1px solid rgba(175, 177, 184, 1);
+   transition-property: border, color;
+   transition-duration: 250ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+   &:hover,
+   &:focus {
+      border: 1px solid $special-color;
+      color: $special-color;
+   }
+}
+.customer__icon {
+   width: 106px;
+   height: 60px;
+   fill: currentColor;
+}

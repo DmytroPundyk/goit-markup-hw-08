@@ -1,0 +1,45 @@
+/* секция Наша команда */
+.our-team {
+   background-color: $bg-team-filter;
+   padding: 60px 0 60px 0;
+}
+
+.our-team__main-header {
+   font-weight: bold;
+   font-size: 28px;
+   line-height: 1.178;
+   text-align: center;
+   letter-spacing: inherit;
+   margin-bottom: 50px;
+}
+
+.our-team__item {
+   background-color: $main-color;
+   border-radius: 0px 0px 3px 3px;
+   box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.15);
+   
+
+     &:not(:last-child) {
+   margin-bottom:$basic-card-gap;
+}
+
+}
+.our-team__card-description {
+   padding: 30px;
+}
+.our-team__name {
+   font-weight: 500;
+   font-size: 16px;
+   text-align: center;
+   line-height: 1.187;
+   letter-spacing: inherit;
+   margin-bottom: 10px;
+}
+.our-team__position {
+   font-size: 16px;
+   letter-spacing: inherit;
+   text-align: center;
+   line-height: 1.187;
+   margin-bottom: 16px;
+   color: $second-text-color;
+}
