@@ -126,3 +126,11 @@
    padding: 10px 55px;
    letter-spacing: 0.06em;
 }
+@media screen and(min-width:$desktop) {
+   .form__field {
+      &.form__check-item {
+         font-size: 14px;
+         line-height: 1.714;
+      }
+   }
+}

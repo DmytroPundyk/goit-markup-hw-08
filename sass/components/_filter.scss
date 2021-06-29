@@ -1,11 +1,15 @@
 .filter-list {
- display: flex;
+   display: flex;
    flex-wrap: wrap;
    margin-bottom: 40px;
 }
-.filter-list__item:not(:last-child) {
-   margin-right: 8px;
-   margin-bottom: 15px;
+.filter-list__item {
+   &:not(:last-child) {
+      margin-right: 8px;
+   }
+   &:nth-child(-n + 3) {
+      margin-bottom: 15px;
+   }
 }
 .filter-list__button {
    padding: 6px 22px;
@@ -31,5 +35,20 @@
       color: $main-color;
       box-shadow: 1px 3px 1px 0px #0000004d;
       cursor: pointer;
+   }
+}
+@media screen and(min-width:$tablet) {
+   .filter-list {
+      margin-bottom: 30px;
+      @include centeredFlex();
+   }
+   .filter-list__item:nth-child(-n + 3) {
+      margin-bottom: 0px;
+   }
+}
+@media screen and(min-width:$desktop) {
+   .filter-list {
+      @include centeredFlex();
+      margin-bottom: 50px;
    }
 }

@@ -3,3 +3,8 @@
    height: 60px;
    border-bottom: 1px solid #ececec;
 }
+@media screen and(min-width:$tablet) {
+   .header {
+      height: 80px;
+   }
+}

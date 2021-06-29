@@ -1,7 +1,6 @@
 /* Секция "особености работы" */
 .features {
    padding: 60px 0 60px 0;
-
 }
 /*  скрытый заголовок */
 .visually-hidden {
@@ -16,16 +15,16 @@
 }
 .features__item {
    width: 450px;
-    margin-bottom: 30px;
+   margin-bottom: 30px;
 }
-.features__block{
-width: 100%;
-height: 120px;
-background: #F5F4FA;
-border-radius: 4px;
- @include centeredFlex();
+.features__block {
+   width: 100%;
+   height: 120px;
+   background: #f5f4fa;
+   border-radius: 4px;
+   @include centeredFlex();
+   margin-bottom: $basic-card-gap;
 }
-
 
 .features__header {
    text-align: center;
@@ -33,11 +32,41 @@ border-radius: 4px;
    font-size: inherit;
    font-weight: 700;
    line-height: inherit;
-   margin-top: $basic-card-gap;
+   margin-bottom: 10px;
 }
 .features__text {
-   margin-top: 10px;
    line-height: 1.714;
    letter-spacing: 0.03em;
    color: $second-text-color;
+}
+@media screen and(min-width:$tablet) {
+   .features__list {
+      display: flex;
+      flex-basis: calc(100% / 2 -30px);
+      flex-wrap: wrap;
+   }
+   .features__item {
+      width: 354px;
+      &:nth-child(2n + 1) {
+         margin-right: 30px;
+      }
+      &:nth-child(n + 3) {
+         margin-bottom: 0;
+      }
+   }
+   .features__header {
+      text-align: start;
+   }
+}
+@media screen and(min-width:$desktop) {
+   .features {
+      padding: 94px 0 94px 0;
+   }
+   .features__item {
+      width: 270px;
+      margin-bottom: 0px;
+      &:not(:last-child) {
+         margin-right: 30px;
+      }
+   }
 }
