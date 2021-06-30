@@ -3,9 +3,10 @@
 .pattern-list__item {
    display: block;
    background-color: $main-color;
-
-   &:not(:last-child) {
-      margin-bottom: 30px;
+   @media screen and(max-width:1199px) {
+      &:not(:last-child) {
+         margin-bottom: 30px;
+      }
    }
 }
 .product-link__img {
@@ -89,8 +90,10 @@
    }
    .pattern-list__item {
       width: 354px;
-      &:nth-child(2n + 1) {
-         margin-right: 30px;
+      @media screen and(max-width:1199px) {
+         &:nth-child(2n + 1) {
+            margin-right: 30px;
+         }
       }
    }
    .product-link {
@@ -110,12 +113,6 @@
    }
    .pattern-list__item {
       width: 370px;
-      &:nth-child(2n + 1) {
-         margin-right: 0px;
-      }
-      &:not(:last-child) {
-         margin-bottom: 0px;
-      }
       display: block;
       margin-left: $basic-card-gap;
       margin-top: $basic-card-gap;
