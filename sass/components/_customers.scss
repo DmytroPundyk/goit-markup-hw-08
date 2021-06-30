@@ -13,12 +13,12 @@
 .customers__list {
    display: flex;
    @media screen and(max-width:767px) {
-      flex-basis: calc(100% / 2 -30px);
       flex-wrap: wrap;
    }
 }
 .customers__item {
    @media screen and(max-width:767px) {
+      width: calc((100% - 1 * 30px) / 2);
       &:nth-child(2n + 1) {
          margin-right: $basic-card-gap;
       }
@@ -29,7 +29,7 @@
 }
 .customers__link {
    @include centeredFlex();
-   width: 210px;
+
    height: 92px;
    border-radius: 4px;
    color: rgba(175, 177, 184, 1);
@@ -52,21 +52,18 @@
 @media screen and(min-width:$tablet) {
    .customers__list {
       @media screen and(max-width:1199px) {
-         flex-basis: calc(100% / 3 -30px);
          flex-wrap: wrap;
-         margin-top: #{-1 * $basic-card-gap};
-         margin-left: #{-1 * $basic-card-gap};
+         margin-top: -$basic-card-gap;
+         margin-left: -$basic-card-gap;
       }
    }
    .customers__item {
       display: block;
+      width: calc((100% - 3 * 30px) / 3);
       @media screen and(max-width:1199px) {
          margin-top: $basic-card-gap;
          margin-left: $basic-card-gap;
       }
-   }
-   .customers__link {
-      width: 226px;
    }
 }
 @media screen and(min-width:$desktop) {
@@ -79,11 +76,9 @@
       margin-bottom: 50px;
    }
    .customers__item {
+      width: calc((100% - 5 * 30px) / 6);
       &:not(:last-child) {
          margin-right: $basic-card-gap;
       }
-   }
-   .customers__link {
-      width: 170px;
    }
 }

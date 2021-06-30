@@ -8,7 +8,7 @@
          rgba(47, 48, 58, 0.4),
          rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/Header.jpg);
+      url(../../images/heromobile.jpg);
    background-repeat: no-repeat;
    background-position: center;
 
@@ -25,7 +25,6 @@
    margin-left: auto;
    margin-right: auto;
    margin-bottom: $basic-card-gap;
-   width: 360px;
    font-size: 26px;
    line-height: 1.615;
 }
@@ -37,21 +36,23 @@
                rgba(47, 48, 58, 0.4),
                rgba(47, 48, 58, 0.4)
             ),
-            url(../../images/herotablet.jpg);
+            url(../../images/herotablet.webp);
       }
+   }
+   .hero__header {
+      width: 360px;
    }
 }
 @media screen and(min-width:$desktop) {
    .hero {
       height: 600px;
       max-width: 1600px;
-      background: $bg-hero-footer;
       background-image: linear-gradient(
             to right,
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)
          ),
-         url(../../images/Img.jpg);
+         url(../../images/herodesktop.jpg);
       padding: 200px 0 200px 0;
    }
    .hero__header {

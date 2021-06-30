@@ -1,6 +1,6 @@
 /* контейнеры всех секций */
 .container {
-   width: $mobile;
+   max-width: $mobile;
    margin: 0 auto;
    padding: 0 15px;
 
@@ -10,11 +10,13 @@
    }
    .header & {
       display: flex;
+      position: relative;
    }
-}
-@media screen and(min-width:$tablet) {
-   .container {
-      width: $tablet;
+   & .menu-container {
+      position: relative;
+   }
+   @media screen and(min-width:$tablet) {
+      max-width: $tablet;
 
       .footer & {
          display: flex;
@@ -22,10 +24,9 @@
          flex-wrap: wrap;
       }
    }
-}
-@media screen and(min-width:$desktop) {
-   .container {
-      width: $desktop;
+
+   @media screen and(min-width:$desktop) {
+      max-width: $desktop;
       display: flex;
 
       .hero &,

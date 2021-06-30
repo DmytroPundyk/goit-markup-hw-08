@@ -49,14 +49,16 @@
    }
    .our-team__list {
       display: flex;
-      flex-basis: calc(100% / 2 -30px);
       flex-wrap: wrap;
    }
    .our-team__item {
-      width: 354px;
+      width: calc((100% - 1 * 30px) / 2);
       @media screen and(max-width:1199px) {
          &:nth-child(2n + 1) {
             margin-right: $basic-card-gap;
+         }
+         &:nth-child(-n + 2) {
+            margin-bottom: $basic-card-gap;
          }
       }
    }
@@ -74,7 +76,7 @@
    }
 
    .our-team__item {
-      width: 270px;
+      width: calc((100% - 3 * 30px) / 4);
       &:not(:last-child) {
          margin-right: $basic-card-gap;
       }
