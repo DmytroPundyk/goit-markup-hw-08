@@ -30,14 +30,12 @@
 }
 @media screen and(min-width:$tablet) {
    .hero {
-      @media screen and(max-width:1199px) {
-         background-image: linear-gradient(
-               to right,
-               rgba(47, 48, 58, 0.4),
-               rgba(47, 48, 58, 0.4)
-            ),
-            url(../../images/herotablet.webp);
-      }
+      background-image: linear-gradient(
+            to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+         ),
+         url(../../images/herotablet.webp);
    }
    .hero__header {
       width: 360px;
