@@ -6,9 +6,8 @@ body {
    letter-spacing: 0.03em;
    color: $main-text-color;
    background: $main-color;
-}
-@media screen and (min-width: 320px) {
-   body {
+
+   @media screen and (min-width: 320px) {
       overflow-x: hidden;
    }
 }

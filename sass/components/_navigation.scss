@@ -1,19 +1,22 @@
 /* навигация сайта */
-
-@media screen and(max-width: 767px) {
-   .nav__list {
+.nav__list {
+   @media screen and(max-width: 767px) {
       display: none;
    }
-}
-
-@media screen and(min-width:$tablet) {
-   .nav__list {
+   @media screen and(min-width:$tablet) {
       display: flex;
       width: 294px;
       margin-left: 88px;
    }
-   .nav__item:not(:last-child) {
-      margin-right: 50px;
+   @media screen and(min-width:$desktop) {
+      margin-left: 93px;
+   }
+}
+.nav__item {
+   @media screen and(min-width:$tablet) {
+      &:not(:last-child) {
+         margin-right: 50px;
+      }
    }
    /* стилизации ссылок навигации и контактов*/
    .nav__link {
@@ -47,10 +50,5 @@
       &--active {
          color: $special-color;
       }
-   }
-}
-@media screen and(min-width:$desktop) {
-   .nav__list {
-      margin-left: 93px;
    }
 }

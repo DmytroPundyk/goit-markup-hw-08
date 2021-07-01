@@ -7,6 +7,16 @@
    margin-bottom: 60px;
    @include centeredFlex();
    flex-direction: column;
+   @media screen and(min-width:$tablet) {
+      margin-left: 76px;
+      margin-bottom: 60px;
+   }
+   @media screen and(min-width:$desktop) {
+      width: 231px;
+      align-items: flex-start;
+      margin-left: 0px;
+      margin-bottom: 0px;
+   }
 }
 .logo {
    &--white {
@@ -20,6 +30,9 @@
    text-align: center;
    &:not(:last-child) {
       margin-bottom: 9px;
+   }
+   @media screen and(min-width:$desktop) {
+      text-align: start;
    }
 }
 
@@ -45,6 +58,12 @@
 
 .social-network {
    margin-bottom: 60px;
+   @media screen and(min-width:$tablet) {
+      margin-left: 165px;
+   }
+   @media screen and(min-width:$desktop) {
+      margin-left: 70px;
+   }
 }
 .social-network__header {
    text-align: center;
@@ -55,6 +74,10 @@
    text-transform: uppercase;
    color: $main-color;
    margin-bottom: 20px;
+
+   @media screen and(min-width:$desktop) {
+      text-align: start;
+   }
 }
 .social-network__list {
    @include centeredFlex();
@@ -94,6 +117,10 @@
    text-transform: uppercase;
    color: $main-color;
    margin-bottom: 20px;
+
+   @media screen and(min-width:$desktop) {
+      text-align: start;
+   }
 }
 
 .footer-form__input {
@@ -117,6 +144,12 @@
       letter-spacing: 0.03em;
       color: #ffffff99;
    }
+   @media screen and(min-width:$tablet) {
+      width: 450px;
+   }
+   @media screen and(min-width:$desktop) {
+      width: 358px;
+   }
 }
 
 .footer-form__submit {
@@ -139,61 +172,32 @@
    &--center {
       @include centeredFlex();
    }
+   @media screen and(min-width:$desktop) {
+      margin-left: 12px;
+   }
 }
 .footer-form__icon {
    margin-left: 10px;
 }
-@media screen and(min-width:$tablet) {
-   .logo-address {
-      margin-left: 76px;
-      margin-bottom: 60px;
-   }
-   .social-network {
-      margin-left: 165px;
-   }
-   .footer-form {
+
+.footer-form {
+   @media screen and(min-width:$tablet) {
       margin-left: 166px;
    }
-   .footer-form__input {
-      width: 450px;
-   }
-}
-@media screen and(min-width:$desktop) {
-   .logo-address {
-      width: 231px;
-      align-items: flex-start;
-      margin-left: 0px;
-      margin-bottom: 0px;
-   }
-   .logo-address__item {
-      text-align: start;
-   }
-   .logo-container {
-      margin-bottom: 20px;
-   }
-   .social-network {
-      margin-left: 70px;
-   }
-   .social-network__header {
-      text-align: start;
-   }
-   .footer-form {
+   @media screen and(min-width:$desktop) {
       margin-left: 93px;
    }
-
-   .footer-form__label {
-      text-align: start;
+}
+.logo-container {
+   @media screen and(min-width:$desktop) {
+      margin-bottom: 20px;
    }
-   .footer-form__item {
+}
+.footer-form__item {
+   @media screen and(min-width:$desktop) {
       display: flex;
       flex-wrap: nowrap;
       justify-content: space-between;
       align-items: baseline;
-   }
-   .footer-form__input {
-      width: 358px;
-   }
-   .footer-form__submit {
-      margin-left: 12px;
    }
 }

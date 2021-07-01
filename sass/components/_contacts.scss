@@ -1,28 +1,40 @@
-@media screen and(max-width: 767px) {
-   .contacts {
+.contacts {
+   @media screen and(max-width: 767px) {
       display: none;
    }
-}
-
-@media screen and(min-width:$tablet) {
-   .contacts {
+   @media screen and(min-width:$tablet) {
       display: flex;
       align-items: baseline;
       justify-content: center;
       flex-direction: column;
       margin-left: 84px;
    }
-   .contacts__item {
-      @media screen and(max-width:1199px) {
-         &:not(:last-child) {
-            margin-bottom: 10px;
-         }
+   @media screen and(min-width:$desktop) {
+      display: flex;
+      flex-direction: row;
+      align-items: baseline;
+      margin-left: auto;
+   }
+}
+
+.contacts__item {
+   @media screen and(max-width:1199px) {
+      &:not(:last-child) {
+         margin-bottom: 10px;
+      }
+   }
+   @media screen and(min-width:$desktop) {
+      &:last-child {
+         margin-left: 30px;
       }
    }
    .contacts__icon {
       display: inline-block;
       margin-right: 8px;
       fill: currentColor;
+      @media screen and(min-width:$desktop) {
+         margin-right: 10px;
+      }
    }
    .contacts__link {
       @include centeredFlex();
@@ -41,23 +53,7 @@
          color: $special-color;
       }
    }
-}
-@media screen and(min-width:$desktop) {
-   .contacts {
-      display: flex;
-      flex-direction: row;
-      align-items: baseline;
-      margin-left: auto;
-   }
-   .contacts__item {
-      &:last-child {
-         margin-left: 30px;
-      }
-   }
-   .contacts__icon {
-      margin-right: 10px;
-   }
-   .contacts__link {
+   @media screen and(min-width:$desktop) {
       font-size: inherit;
       line-height: 1.142;
       padding: 32px 0;

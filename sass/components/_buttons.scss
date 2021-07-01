@@ -33,9 +33,7 @@
       fill: $special-color;
       cursor: pointer;
    }
-}
-@media screen and(min-width: $tablet) {
-   .menu-toggle {
+   @media screen and(min-width: $tablet) {
       display: none;
    }
 }

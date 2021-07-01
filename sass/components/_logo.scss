@@ -16,15 +16,12 @@
       color: $special-color;
       font-family: "Raleway";
    }
-}
-@media screen and(min-width:$tablet) {
-   .logo {
+
+   @media screen and(min-width:$tablet) {
       padding-top: 26px;
       padding-bottom: 26px;
    }
-}
-@media screen and(min-width:$desktop) {
-   .logo {
+   @media screen and(min-width:$desktop) {
       font-size: 26px;
       line-height: 1.192;
       padding-top: 24px;

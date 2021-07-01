@@ -2,6 +2,9 @@
 .our-team {
    background-color: $bg-team-filter;
    padding: 60px 0 60px 0;
+   @media screen and(min-width:$desktop) {
+      padding: 94px 0 94px 0;
+   }
 }
 
 .our-team__main-header {
@@ -11,6 +14,16 @@
    text-align: center;
    letter-spacing: inherit;
    margin-bottom: 50px;
+   @media screen and(min-width:$tablet) {
+      margin-bottom: $basic-card-gap;
+   }
+   @media screen and(min-width:$desktop) {
+      font-size: 36px;
+      line-height: 1.166;
+      text-align: center;
+      letter-spacing: inherit;
+      margin-bottom: 50px;
+   }
 }
 
 .our-team__item {
@@ -21,6 +34,23 @@
    @media screen and(max-width:767px) {
       &:not(:last-child) {
          margin-bottom: $basic-card-gap;
+      }
+   }
+   @media screen and(min-width:$tablet) {
+      width: calc((100% - 1 * 30px) / 2);
+      @media screen and(max-width:1199px) {
+         &:nth-child(2n + 1) {
+            margin-right: $basic-card-gap;
+         }
+         &:nth-child(-n + 2) {
+            margin-bottom: $basic-card-gap;
+         }
+      }
+   }
+   @media screen and(min-width:$desktop) {
+      width: calc((100% - 3 * 30px) / 4);
+      &:not(:last-child) {
+         margin-right: $basic-card-gap;
       }
    }
 }
@@ -43,42 +73,9 @@
    margin-bottom: 16px;
    color: $second-text-color;
 }
-@media screen and(min-width:$tablet) {
-   .our-team__main-header {
-      margin-bottom: $basic-card-gap;
-   }
-   .our-team__list {
+.our-team__list {
+   @media screen and(min-width:$tablet) {
       display: flex;
       flex-wrap: wrap;
-   }
-   .our-team__item {
-      width: calc((100% - 1 * 30px) / 2);
-      @media screen and(max-width:1199px) {
-         &:nth-child(2n + 1) {
-            margin-right: $basic-card-gap;
-         }
-         &:nth-child(-n + 2) {
-            margin-bottom: $basic-card-gap;
-         }
-      }
-   }
-}
-@media screen and(min-width:$desktop) {
-   .our-team {
-      padding: 94px 0 94px 0;
-   }
-   .our-team__main-header {
-      font-size: 36px;
-      line-height: 1.166;
-      text-align: center;
-      letter-spacing: inherit;
-      margin-bottom: 50px;
-   }
-
-   .our-team__item {
-      width: calc((100% - 3 * 30px) / 4);
-      &:not(:last-child) {
-         margin-right: $basic-card-gap;
-      }
    }
 }

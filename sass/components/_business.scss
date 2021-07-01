@@ -1,6 +1,9 @@
 /* секция Чем мы занимаемся */
 .business {
    padding: 0px 0 94px 0;
+   @media screen and(max-width: 1199px) {
+      display: none;
+   }
 }
 
 .business__main-header {
@@ -35,9 +38,4 @@
    text-transform: uppercase;
    color: $main-color;
    background: rgba(47, 48, 58, 0.8);
-}
-@media screen and(max-width: 1199px) {
-   .business {
-      display: none;
-   }
 }
