@@ -25,7 +25,7 @@
                rgba(47, 48, 58, 0.4),
                rgba(47, 48, 58, 0.4)
             ),
-            url(../../images/heromobile2x.jpg);
+            url(../images/heromobile2x.jpg);
          background-repeat: no-repeat;
          background-position: center;
          background-size: cover;
@@ -45,14 +45,27 @@
    line-height: 1.615;
 }
 @media screen and(min-width:$tablet) {
-   // .hero {
-   //    // background-image: linear-gradient(
-   //    //       to right,
-   //    //       rgba(47, 48, 58, 0.4),
-   //    //       rgba(47, 48, 58, 0.4)
-   //    //    ),
-   //    //    url(../../images/herotablet.webp);
-   // }
+   .hero {
+      background: linear-gradient(
+            to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+         ),
+         url(../images/herotablet.jpg);
+   }
+   @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      & {
+         background: linear-gradient(
+               to right,
+               rgba(47, 48, 58, 0.4),
+               rgba(47, 48, 58, 0.4)
+            ),
+            url(../images/herotablet2x.jpg);
+      }
+   }
    .hero__header {
       width: 360px;
    }
