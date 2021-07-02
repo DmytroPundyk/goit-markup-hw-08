@@ -17,7 +17,6 @@
    }
    @media screen and(min-width:$tablet) {
       max-width: $tablet;
-
       .footer & {
          display: flex;
          align-items: baseline;
