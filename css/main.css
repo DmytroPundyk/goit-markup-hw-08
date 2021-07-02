@@ -418,6 +418,16 @@ img {
   z-index: 9999;
   background-color: #ffffff;
   padding: 48px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-transform: translateX(100%) scale(0.3);
           transform: translateX(100%) scale(0.3);
   -webkit-transition: -webkit-transform 250ms ease-in;
@@ -435,16 +445,6 @@ img {
 .menu-container.is-open {
   -webkit-transform: translateX(0) scale(1);
           transform: translateX(0) scale(1);
-}
-
-.mobile-menu {
-  margin-bottom: 302px;
-}
-
-@media screen and (min-width: 320px) {
-  .mobile-menu {
-    margin-bottom: 252px;
-  }
 }
 
 .mobile-menu__item:not(:last-child) {

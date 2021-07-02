@@ -192,7 +192,12 @@
                <h2 class="our-team__main-header">Наша команда</h2>
                <ul class="our-team__list">
                   <li class="our-team__item">
-                     <img src="images/photo1.jpg" width="450" alt="teammate1" />
+                     <img
+                        srcset="images/photo1.jpg 1x, images/photo1(2x).jpg 2x"
+                        src="images/photo1.jpg"
+                        width="450"
+                        alt="teammate1"
+                     />
                      <div class="our-team__card-description">
                         <h3 class="our-team__name">Игорь Демьяненко</h3>
                         <p class="our-team__position">Product Designer</p>
@@ -233,7 +238,12 @@
                      </div>
                   </li>
                   <li class="our-team__item">
-                     <img src="images/photo2.jpg" width="450" alt="teammate2" />
+                     <img
+                        srcset="images/photo2.jpg 1x, images/photo2(2x).jpg 2x"
+                        src="images/photo2.jpg"
+                        width="450"
+                        alt="teammate2"
+                     />
                      <div class="our-team__card-description">
                         <h3 class="our-team__name">Ольга Репина</h3>
                         <p class="our-team__position">Frontend Developer</p>
@@ -274,7 +284,12 @@
                      </div>
                   </li>
                   <li class="our-team__item">
-                     <img src="images/photo3.jpg" width="450" alt="teammate3" />
+                     <img
+                        srcset="images/photo3.jpg 1x, images/photo3(2x).jpg 2x"
+                        src="images/photo3.jpg"
+                        width="450"
+                        alt="teammate3"
+                     />
                      <div class="our-team__card-description">
                         <h3 class="our-team__name">Николай Тарасов</h3>
                         <p class="our-team__position">Marketing</p>
@@ -315,7 +330,12 @@
                      </div>
                   </li>
                   <li class="our-team__item">
-                     <img src="images/photo4.jpg" width="450" alt="teammate4" />
+                     <img
+                        srcset="images/photo4.jpg 1x, images/photo4(2x).jpg 2x"
+                        src="images/photo4.jpg"
+                        width="450"
+                        alt="teammate4"
+                     />
                      <div class="our-team__card-description">
                         <h3 class="our-team__name">Михаил Ермаков</h3>
                         <p class="our-team__position">UI Designer</p>
@@ -615,47 +635,51 @@
                <a href="#contacts" class="mobile-menu__link">Контакты</a>
             </li>
          </ul>
-         <ul class="mobile-menu__contacts">
-            <li class="mobile-menu__contacts-item">
-               <a
-                  href="tel:+380961111111"
-                  class="
-                     mobile-menu__contacts-link mobile-menu__contacts-link--blue
-                  "
-                  >+38 096 111 11 11</a
-               >
-            </li>
-            <li class="mobile-menu__contacts-item">
-               <a
-                  href="mailto:info@devstudio.com"
-                  class="mobile-menu__contacts-link"
-                  >info@devstudio.com</a
-               >
-            </li>
-         </ul>
-         <ul class="mobile-menu__social">
-            <li class="mobile-menu__social-item">
-               <a class="mobile-menu__social-link" href="">Instagram </a>
-            </li>
-            <svg class="mobile-menu__social-icon" width="0" height="22">
-               <use href="./images/symbol-defs.svg#icon-Line-1-1"></use>
-            </svg>
-            <li class="mobile-menu__social-item">
-               <a class="mobile-menu__social-link" href="">Twitter</a>
-            </li>
-            <svg class="mobile-menu__social-icon" width="0" height="22">
-               <use href="./images/symbol-defs.svg#icon-Line-1-"></use>
-            </svg>
-            <li class="mobile-menu__social-item">
-               <a class="mobile-menu__social-link" href="">Facebook</a>
-            </li>
-            <svg class="mobile-menu__social-icon" width="0" height="22">
-               <use href="./images/symbol-defs.svg#icon-Line-1-"></use>
-            </svg>
-            <li class="mobile-menu__social-item">
-               <a class="mobile-menu__social-link" href="">LinkedIn</a>
-            </li>
-         </ul>
+         <div class="menu-container__contacts-social--bottom">
+            <ul class="mobile-menu__contacts">
+               <li class="mobile-menu__contacts-item">
+                  <a
+                     href="tel:+380961111111"
+                     class="
+                        mobile-menu__contacts-link
+                        mobile-menu__contacts-link--blue
+                     "
+                     >+38 096 111 11 11</a
+                  >
+               </li>
+               <li class="mobile-menu__contacts-item">
+                  <a
+                     href="mailto:info@devstudio.com"
+                     class="mobile-menu__contacts-link"
+                     >info@devstudio.com</a
+                  >
+               </li>
+            </ul>
+
+            <ul class="mobile-menu__social">
+               <li class="mobile-menu__social-item">
+                  <a class="mobile-menu__social-link" href="">Instagram </a>
+               </li>
+               <svg class="mobile-menu__social-icon" width="0" height="22">
+                  <use href="./images/symbol-defs.svg#icon-Line-1-1"></use>
+               </svg>
+               <li class="mobile-menu__social-item">
+                  <a class="mobile-menu__social-link" href="">Twitter</a>
+               </li>
+               <svg class="mobile-menu__social-icon" width="0" height="22">
+                  <use href="./images/symbol-defs.svg#icon-Line-1-"></use>
+               </svg>
+               <li class="mobile-menu__social-item">
+                  <a class="mobile-menu__social-link" href="">Facebook</a>
+               </li>
+               <svg class="mobile-menu__social-icon" width="0" height="22">
+                  <use href="./images/symbol-defs.svg#icon-Line-1-"></use>
+               </svg>
+               <li class="mobile-menu__social-item">
+                  <a class="mobile-menu__social-link" href="">LinkedIn</a>
+               </li>
+            </ul>
+         </div>
       </div>
 
       <script
