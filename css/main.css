@@ -677,7 +677,7 @@ img {
 }
 
 @media screen and (max-width: 1199px) {
-  .contacts__item:not(:last-child) {
+  .contacts__item:first-child {
     margin-bottom: 10px;
   }
 }
@@ -688,19 +688,19 @@ img {
   }
 }
 
-.contacts__item .contacts__icon {
+.contacts__icon {
   display: inline-block;
   margin-right: 8px;
   fill: currentColor;
 }
 
 @media screen and (min-width: 1200px) {
-  .contacts__item .contacts__icon {
+  .contacts__icon {
     margin-right: 10px;
   }
 }
 
-.contacts__item .contacts__link {
+.contacts__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -724,12 +724,21 @@ img {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contacts__item .contacts__link:hover, .contacts__item .contacts__link:focus {
+.contacts__link:hover, .contacts__link:focus {
   color: #2196f3;
 }
 
+@media screen and (max-width: 1199px) {
+  .contacts__link--top {
+    padding-top: 21px;
+  }
+  .contacts__link--bottom {
+    padding-bottom: 21px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
-  .contacts__item {
+  .contacts__link {
     font-size: inherit;
     line-height: 1.142;
     padding: 32px 0;
@@ -1581,6 +1590,7 @@ img {
 @media screen and (min-width: 768px) {
   .logo-address {
     margin-left: 76px;
+    margin-right: 165px;
     margin-bottom: 60px;
   }
 }
@@ -1593,6 +1603,7 @@ img {
             align-items: flex-start;
     margin-left: 0px;
     margin-bottom: 0px;
+    margin-right: 70px;
   }
 }
 
@@ -1640,18 +1651,6 @@ img {
 
 .social-network {
   margin-bottom: 60px;
-}
-
-@media screen and (min-width: 768px) {
-  .social-network {
-    margin-left: 165px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .social-network {
-    margin-left: 70px;
-  }
 }
 
 .social-network__header {
@@ -2017,7 +2016,7 @@ img {
 
 .product-link__img {
   width: 100%;
-  height: 294px;
+  height: auto;
 }
 
 .product-link {
@@ -2043,7 +2042,7 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 100%;
+    height: auto;
   }
 }
 
@@ -2085,8 +2084,8 @@ img {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 322px;
-  height: 168px;
+  width: 90%;
+  height: auto;
   margin: 0;
   font-size: 18px;
   line-height: 1.555;
