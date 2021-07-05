@@ -8,23 +8,33 @@
    font-size: 24px;
    line-height: 1.166;
    letter-spacing: inherit;
-   padding-top: 16px;
-   padding-bottom: 16px;
-
-   /* голубая часть логотипа сайта */
-   &--blue {
-      color: $special-color;
-      font-family: "Raleway";
-   }
-
-   @media screen and(min-width:$tablet) {
-      padding-top: 26px;
-      padding-bottom: 26px;
-   }
+  
    @media screen and(min-width:$desktop) {
       font-size: 26px;
       line-height: 1.192;
-      padding-top: 24px;
+    
+   }
+ 
+   /* голубая часть логотипа сайта */
+   &--blue {
+      color: $special-color;
+      font-family: "Raleway"; 
+   
+   }
+ 
+}
+.logo-container--header{
+   padding-top: 16px;
+   padding-bottom: 16px;
+  
+   @media screen and(min-width:$tablet) {
+      padding-top: 26px;
+      padding-bottom: 26px;
+      margin-right: 88px;
+   }
+   @media screen and(min-width:$desktop) {
+      margin-left: 93px; 
+       padding-top: 24px;
       padding-bottom: 25px;
    }
 }

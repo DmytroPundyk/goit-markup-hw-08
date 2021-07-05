@@ -383,9 +383,14 @@ img {
   font-size: 24px;
   line-height: 1.166;
   letter-spacing: inherit;
-  padding-top: 16px;
-  padding-bottom: 16px;
   /* голубая часть логотипа сайта */
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.192;
+  }
 }
 
 .logo--blue {
@@ -393,17 +398,22 @@ img {
   font-family: "Raleway";
 }
 
+.logo-container--header {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
 @media screen and (min-width: 768px) {
-  .logo {
+  .logo-container--header {
     padding-top: 26px;
     padding-bottom: 26px;
+    margin-right: 88px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .logo {
-    font-size: 26px;
-    line-height: 1.192;
+  .logo-container--header {
+    margin-left: 93px;
     padding-top: 24px;
     padding-bottom: 25px;
   }
@@ -581,13 +591,6 @@ img {
     display: -ms-flexbox;
     display: flex;
     width: 294px;
-    margin-left: 88px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .nav__list {
-    margin-left: 93px;
   }
 }
 
@@ -919,7 +922,7 @@ img {
 @media screen and (min-width: 320px) and (max-width: 450px) {
   .modal {
     min-width: 90vw;
-    padding: 20px;
+    padding: 35px 20px 20px 20px;
   }
 }
 
@@ -1129,6 +1132,14 @@ img {
 
 @media screen and (min-width: 1200px) {
   .form__field.form__check-item {
+    font-size: 14px;
+    line-height: 1.714;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .form__field.form__check-item {
+    display: inline-block;
     font-size: 14px;
     line-height: 1.714;
   }

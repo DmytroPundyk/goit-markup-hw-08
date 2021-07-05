@@ -135,3 +135,12 @@
       }
    }
 }
+@media screen and(max-width:480px) {
+   .form__field {
+      &.form__check-item {
+         display: inline-block;
+         font-size: 14px;
+         line-height: 1.714;
+      }
+   }
+}
