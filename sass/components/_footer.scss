@@ -8,9 +8,9 @@
    @include centeredFlex();
    flex-direction: column;
    @media screen and(min-width:$tablet) {
-      margin-left: 76px;
       margin-right: 165px;
-      margin-bottom: 60px;
+      margin-bottom: 60px; 
+     
    }
    @media screen and(min-width:$desktop) {
       width: 231px;
@@ -177,9 +177,6 @@
 }
 
 .footer-form {
-   @media screen and(min-width:$tablet) {
-      margin-left: 166px;
-   }
    @media screen and(min-width:$desktop) {
       margin-left: 93px;
    }

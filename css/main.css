@@ -339,6 +339,8 @@ img {
             align-items: baseline;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
@@ -1600,7 +1602,6 @@ img {
 
 @media screen and (min-width: 768px) {
   .logo-address {
-    margin-left: 76px;
     margin-right: 165px;
     margin-bottom: 60px;
   }
@@ -1864,12 +1865,6 @@ img {
 
 .footer-form__icon {
   margin-left: 10px;
-}
-
-@media screen and (min-width: 768px) {
-  .footer-form {
-    margin-left: 166px;
-  }
 }
 
 @media screen and (min-width: 1200px) {
